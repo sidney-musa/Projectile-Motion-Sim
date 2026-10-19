@@ -1,0 +1,74 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Projectile_Motion_FINAL"
+        xmlns:vm="clr-namespace:Projectile_Motion_FINAL.ViewModel" 
+        xmlns:Model="clr-namespace:Projectile_Motion_FINAL.Model" x:Class="Projectile_Motion_FINAL.MainWindow" 
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+    <Window.DataContext>
+        <!-- telling window to bind to properties in projectileVM-->
+        <vm:ProjectileVM/>
+    </Window.DataContext>
+    <Border BorderThickness="0,0,0,60" Background="#FF17C121" BorderBrush="#FF12B315">
+        <!--creating the grass and sky :) -->
+        <Canvas x:Name ="background"  Background="#FF10A3C8">
+
+            <Rectangle HorizontalAlignment="Center" Height="75" VerticalAlignment="Bottom" Width="71" Stroke="#FFF10808" Fill="Red" Canvas.Left="152" Canvas.Top="299"/>
+            <!--Launch button with command bound to ICommand initiaised in the VM -->
+            <Button Command="{Binding ButtonCommand}" Content="Launch" FontWeight="Bold" Background="#FF0027FF" Canvas.Left="165" Canvas.Top="329" HorizontalAlignment="Left" VerticalAlignment="Center" Width="45"/>
+            <!--Defining the projectile with its position bound to X and Y Coord in VM -->
+            <Ellipse Height="{Binding Objheight}"  Fill="Black" Width="{Binding Objwidth}" HorizontalAlignment="Left" VerticalAlignment="Top"         
+            Canvas.Left="{Binding XCoord}" Canvas.Top="{Binding YCoord}">
+            </Ellipse>
+            <!--Control Panel styling -->
+            <DockPanel Height="223"  DockPanel.Dock="Bottom"  Canvas.Top="211" Width="152" HorizontalAlignment="Center" VerticalAlignment="Top">
+                <DockPanel.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFDEE010"/>
+                        <GradientStop Color="#FFA50BBF" Offset="1"/>
+                        <GradientStop Color="#FFAE2EA1" Offset="0.764"/>
+                    </LinearGradientBrush>
+                </DockPanel.Background>
+            </DockPanel>
+            <!-- text box for user to input velocity -->
+            <Label Content="Velocity" Height="25" Canvas.Top="217" Width="57" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="-0.615,0.519" FontWeight="Bold" Foreground="#FF2E00D8" FontSize="13" FontFamily="Impact"/>
+            <TextBox  x:Name="userVel"  Height="24" Width="61" BorderBrush="Black" Background="#FFFBFBFB" HorizontalAlignment="Left" Canvas.Left="75" Canvas.Top="217" VerticalAlignment="Top" Text="{Binding InitialVel}"/>
+            <!-- text box for user to input angle -->
+            <TextBox x:Name="userAngle" TextWrapping="Wrap" Text="{Binding Angle}" RenderTransformOrigin="0.528,0.615" Height="22" Canvas.Left="70" Canvas.Top="246" Width="66" HorizontalAlignment="Center" VerticalAlignment="Top" />
+            <Label Content="Angle" Canvas.Top="247" HorizontalAlignment="Left" VerticalAlignment="Top" Width="68" FontWeight="Bold" FontFamily="Impact" Height="30" FontSize="15" Foreground="#FF2E00D8"/>
+            <!-- text box for user to input height -->
+            <TextBox Canvas.Left="68"  x:Name="userHeight" TextWrapping="Wrap" Text="{Binding Sv}" Canvas.Top="278" Width="68" Height="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Label Content="Height" Canvas.Top="277" Width="68" FontWeight="Bold" FontFamily="Impact" Height="30" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FF2C03C3"/>
+            <!-- text box for user to input gravity -->
+            <Label Content="Gravity" Canvas.Top="304" Width="68" FontWeight="Bold" FontFamily="Impact" Height="30" FontSize="15" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="#FF320DB9"/>
+            <TextBox Canvas.Left="68"  x:Name="gravity" TextWrapping="Wrap" Text="{Binding Gravity}" Canvas.Top="304" Width="68" Height="20" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <!-- text box for user to input the drag coefficient -->
+            <Label Content="Drag Coefficient" Canvas.Top="373" Width="91" FontWeight="Bold" FontFamily="Gabriola" Height="50" FontSize="15" Foreground="#FF00FF90" HorizontalAlignment="Center" VerticalAlignment="Top" Background="{x:Null}"/>
+            <TextBox Canvas.Left="96"  x:Name="dragCoef" TextWrapping="Wrap" Text="{Binding DragCoef}" Canvas.Top="373" Width="45" Height="20" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <!-- text box for user to input the mass -->
+            <Label Content="Mass" Canvas.Top="394" Width="68" FontWeight="Bold" FontFamily="Gabriola" Height="30" FontSize="15" Foreground="#FF00FF90" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBox Canvas.Left="68"  x:Name="mass" TextWrapping="Wrap" Text="{Binding Mass}" Canvas.Top="404" Width="68" Height="20" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.338,1.202"/>
+            <!-- creating leaderboard -->
+            <TextBox TextWrapping="Wrap" Text="LEADERBOARD " Width="152" HorizontalAlignment="Left" VerticalAlignment="Top" Height="32"  Canvas.Top="0"/>
+            <TextBox TextWrapping="Wrap" Text="Range" Canvas.Top="31" Width="120" HorizontalAlignment="Center" Height="22" VerticalAlignment="Top"/>
+            <TextBox TextWrapping="Wrap" Text="Pos" Width="32" Canvas.Left="120" Canvas.Top="31" HorizontalAlignment="Center" VerticalAlignment="Top" Height="22" />
+            <TextBox TextWrapping="Wrap" Text="1st" Width="32" Canvas.Left="120" Canvas.Top="53" Height="22" HorizontalAlignment="Center" VerticalAlignment="Top" />
+            <TextBox TextWrapping="Wrap" Text="2nd" Width="32" Canvas.Left="120" Canvas.Top="75" Height="22" HorizontalAlignment="Center" VerticalAlignment="Top" />
+            <TextBox TextWrapping="Wrap" Text="3rd" Width="32" Canvas.Left="120" Canvas.Top="97" Height="22" HorizontalAlignment="Left" VerticalAlignment="Center" />
+            <TextBox TextWrapping="Wrap" Text="4th" Width="32" Canvas.Left="120" Canvas.Top="119" Height="22" HorizontalAlignment="Center" VerticalAlignment="Top" />
+            <TextBox TextWrapping="Wrap" Text="5th" Width="32" Canvas.Left="120" Canvas.Top="141" Height="22" HorizontalAlignment="Center" VerticalAlignment="Top" />
+            <!-- binding text in box to attributes in VM from the model -->
+            <TextBox TextWrapping="Wrap" Text="{Binding First}" Canvas.Top="53" Width="120" Height="22" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBox TextWrapping="Wrap" Text="{Binding Second}" Canvas.Top="75" Width="120" Height="22" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBox TextWrapping="Wrap" Text="{Binding Third}" Canvas.Top="97" Width="120" Height="22" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBox TextWrapping="Wrap" Text="{Binding Fourth}" Canvas.Top="119" Width="120" Height="22" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBox TextWrapping="Wrap" Text="{Binding Fifth}" Canvas.Top="141" Width="120" Height="22" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <!-- Informs VM if user wants a projectile with air resistance -->
+            <CheckBox Content="Air Resistance" Canvas.Left="12" Canvas.Top="349" IsChecked="{Binding AirRes}"/>
+        </Canvas>
+    </Border>
+</Window>

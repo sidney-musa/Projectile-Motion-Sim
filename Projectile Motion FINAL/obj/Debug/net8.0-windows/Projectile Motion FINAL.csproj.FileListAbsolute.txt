@@ -1,0 +1,21 @@
+C:\comp sci\Projectile Motion FINAL\Projectile Motion FINAL\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\comp sci\Projectile Motion FINAL\Projectile Motion FINAL\obj\Debug\net8.0-windows\App.g.cs
+C:\comp sci\Projectile Motion FINAL\Projectile Motion FINAL\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\comp sci\Projectile Motion FINAL\Projectile Motion FINAL\obj\Debug\net8.0-windows\Projectile Motion FINAL_MarkupCompile.cache
+C:\comp sci\Projectile Motion FINAL\Projectile Motion FINAL\obj\Debug\net8.0-windows\Projectile Motion FINAL_MarkupCompile.lref
+C:\comp sci\Projectile Motion FINAL\Projectile Motion FINAL\bin\Debug\net8.0-windows\Projectile Motion FINAL.exe
+C:\comp sci\Projectile Motion FINAL\Projectile Motion FINAL\bin\Debug\net8.0-windows\Projectile Motion FINAL.deps.json
+C:\comp sci\Projectile Motion FINAL\Projectile Motion FINAL\bin\Debug\net8.0-windows\Projectile Motion FINAL.runtimeconfig.json
+C:\comp sci\Projectile Motion FINAL\Projectile Motion FINAL\bin\Debug\net8.0-windows\Projectile Motion FINAL.dll
+C:\comp sci\Projectile Motion FINAL\Projectile Motion FINAL\bin\Debug\net8.0-windows\Projectile Motion FINAL.pdb
+C:\comp sci\Projectile Motion FINAL\Projectile Motion FINAL\obj\Debug\net8.0-windows\MainWindow.baml
+C:\comp sci\Projectile Motion FINAL\Projectile Motion FINAL\obj\Debug\net8.0-windows\Projectile Motion FINAL.g.resources
+C:\comp sci\Projectile Motion FINAL\Projectile Motion FINAL\obj\Debug\net8.0-windows\Projectile Motion FINAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\comp sci\Projectile Motion FINAL\Projectile Motion FINAL\obj\Debug\net8.0-windows\Projectile Motion FINAL.AssemblyInfoInputs.cache
+C:\comp sci\Projectile Motion FINAL\Projectile Motion FINAL\obj\Debug\net8.0-windows\Projectile Motion FINAL.AssemblyInfo.cs
+C:\comp sci\Projectile Motion FINAL\Projectile Motion FINAL\obj\Debug\net8.0-windows\Projectile Motion FINAL.csproj.CoreCompileInputs.cache
+C:\comp sci\Projectile Motion FINAL\Projectile Motion FINAL\obj\Debug\net8.0-windows\Projectile Motion FINAL.dll
+C:\comp sci\Projectile Motion FINAL\Projectile Motion FINAL\obj\Debug\net8.0-windows\refint\Projectile Motion FINAL.dll
+C:\comp sci\Projectile Motion FINAL\Projectile Motion FINAL\obj\Debug\net8.0-windows\Projectile Motion FINAL.pdb
+C:\comp sci\Projectile Motion FINAL\Projectile Motion FINAL\obj\Debug\net8.0-windows\Projectile Motion FINAL.genruntimeconfig.cache
+C:\comp sci\Projectile Motion FINAL\Projectile Motion FINAL\obj\Debug\net8.0-windows\ref\Projectile Motion FINAL.dll

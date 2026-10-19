@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Projectile Motion FINAL/1.0.0": {
+        "runtime": {
+          "Projectile Motion FINAL.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Projectile Motion FINAL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
